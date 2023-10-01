@@ -1,0 +1,25 @@
+Currency exchange service url's
+
+http://localhost:8001/currency-exchange/from/USD/to/INR
+
+Currency conversion service url
+
+http://localhost:8001/currency-conversion/from/USD/to/INR/quantity/30
+
+
+
+Eureka
+
+http://localhost:8761
+
+API Gateway
+
+http://localhost:8765/currency-exchange-service/currency-exchange/from/USD/to/INR
+http://localhost:8765/currency-conversion-service/currency-conversion-loadbalancing-with-eureka-naming-server/from/USD/to/INR/quantity/30
+
+
+Url's after gateway route configuration
+
+http://localhost:8765/currency-exchange/from/USD/to/INR
+http://localhost:8765/currency-conversion-loadbalancing-with-eureka-naming-server/from/USD/to/INR/quantity/30
+http://localhost:8765/currency-conversion-eureka/from/USD/to/INR/quantity/30
